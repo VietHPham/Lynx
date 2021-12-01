@@ -375,6 +375,14 @@ function read_property(node, path, offset, cmd){
                 return;
             }
 
+            // this is statement like a = b
+            if (node.object.type == "AssignmentExpression"){
+                var args = node.object;
+                read_property(args.right, path.splice(0, offset), offset, cmd);
+                read_property(args.left, path.splice(0, offset), offset, cmd);
+                return;
+            }
+            
             // this is statement like [a,b].concat(), we want a,b
             if (node.object.type === "ArrayExpression"){
                 const args = node.object.elements; 
