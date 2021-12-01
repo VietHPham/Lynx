@@ -12,7 +12,9 @@ We are using the following Node environment. Other versions of Node.js are not f
 - npm 5.6.0
  
 To use the Exploit module, you also need to install ExpoSE by running `npm install` in `exploitable/ExpoSE`.
- 
+
+The module `url-parse` is also needed. Please install by running `npm install url-parse`.
+
 ### Harness Preparation
 Lynx takes concrete testcases as input. The following sections introduce how to prepare the test harness required by Lynx.
 
