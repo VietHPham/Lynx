@@ -23,7 +23,7 @@ Clone this repo.
 
 To use the Exploit module, you also need to install ExpoSE by running `npm install` in `exploitable/ExpoSE`.
 
-The module `url-parse` is also needed. Please naviage to the `Lynx/tests` directory and install the module by running `npm install url-parse`.
+The module `url-parse` is also needed. Please navigate to the `Lynx/tests` directory and install the module by running `npm install url-parse`.
 
 After setting everything up, complete the following steps to run the analysis for discovering hidden properties.
 
