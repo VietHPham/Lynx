@@ -6,14 +6,30 @@ Lynx is a vulnerabiltiy analysis tool to detect hidden property abusing ([HPA](h
 
 ## Tutorial
 
-### Environmental Requirement
+### Environmental Requirement (MODIFIED for CSE 543)
 We are using the following Node environment. Other versions of Node.js are not fully tested but probably also work.
 - Node 8.10.0 
 - npm 5.6.0
+
+Install Node.js, npm, and nvm.
+
+Run the following commands to convert to the correct version of Node.js nad npm.
+
+`nvm install 8.10.0`
+
+`nvm use 8.10.0`
  
+Clone this repo.
+
 To use the Exploit module, you also need to install ExpoSE by running `npm install` in `exploitable/ExpoSE`.
 
-The module `url-parse` is also needed. Please install by running `npm install url-parse`.
+The module `url-parse` is also needed. Please navigate to the `Lynx/tests` directory and install the module by running `npm install url-parse`.
+
+After setting everything up, complete the following steps to run the analysis for discovering hidden properties.
+
+1. To identify hidden properties in a given module, ensure that the `enable` option of the corresponding target module config (e.g. `configs.json`) to `true`. 
+2. Enter the dictionary `Lynx/tests` and execute `node Analysis.js`
+3. Rock & roll.
 
 ### Harness Preparation
 Lynx takes concrete testcases as input. The following sections introduce how to prepare the test harness required by Lynx.
