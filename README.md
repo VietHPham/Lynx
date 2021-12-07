@@ -27,7 +27,7 @@ The module `url-parse` is also needed. Please naviage to the `Lynx/tests` direct
 
 After setting everything up, complete the following steps to run the analysis for discovering hidden properties.
 
-1. To identify hidden properties in a given module, ensure that the `enable` option of the corresponding target module config (e.g. `configs.json` to `true`. 
+1. To identify hidden properties in a given module, ensure that the `enable` option of the corresponding target module config (e.g. `configs.json`) to `true`. 
 2. Enter the dictionary `Lynx/tests` and execute `node Analysis.js`
 3. Rock & roll.
 
