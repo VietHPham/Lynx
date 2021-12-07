@@ -1,0 +1,21 @@
+[
+    {
+        "user": "barney",
+        "age": 36,
+        "active": true
+    },
+    12,
+    false,
+    true,
+    [{
+        "user": "barney",
+        "age": 36,
+        "active": true
+    },{
+        "user": "Bob",
+        "age": 32,
+        "active": false
+    }],
+    [1,2,4],
+    "hello world"
+]
