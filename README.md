@@ -25,6 +25,12 @@ To use the Exploit module, you also need to install ExpoSE by running `npm insta
 
 The module `url-parse` is also needed. Please naviage to the `Lynx/tests` directory and install the module by running `npm install url-parse`.
 
+After setting everything up, complete the following steps to run the analysis for discovering hidden properties.
+
+1. To identify hidden properties in a given module, ensure that the `enable` option of the corresponding target module config (e.g. `configs.json` to `true`. 
+2. Enter the dictionary `Lynx/tests` and execute `node Analysis.js`
+3. Rock & roll.
+
 ### Harness Preparation
 Lynx takes concrete testcases as input. The following sections introduce how to prepare the test harness required by Lynx.
 
